@@ -1,7 +1,7 @@
-FROM RepthonArabic/RepthonAr:alpine
+FROM HeaThon/HeaThon:alpine
 
 #clonning repo 
-RUN git clone https://github.com/RepthonArabic/RepthonAr.git /root/userbot
+RUN git clone https://github.com/HeaThon/Arab.git /root/userbot
 #working directory 
 WORKDIR /root/userbot
 
