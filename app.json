@@ -1,71 +1,47 @@
 {
   "name": "© سـورس هـيـثـون الـجـمـهـوريـة ✓",
-  "description": "⿻ سورس هــيــثون ™ افضل سورسات تيليثون ↬اوامر مامطروقه↬ معرب بالكامل ↬ اضافات جديده ↬ تحديثات متواصله ↬ اكتشفها بنفسك ↬────────────────────Sources HeaThon : @CDCTOP",
+  "description": "تنصيب سورس هــيــثون أتبع الخطوات في الاسفل للإستمرار في تنصيب سورس هــيــثون بشكل جيد ✓ { @CDCTOP }",
   "logo": "https://telegra.ph/file/95edff031c98c3306dd08.jpg",
-  "keywords": [
-    "plugin",
-    "modular",
-    "productivity"
-  ],
-  "repository": "https://github.com/HeaThon/Arab/",
+  "keywords": ["plugin","modular","productivity"],
+  "repository": "https://github.com/HeaThon/HeaThon",
   "website": "#TODO",
   "success_url": "#TODO",
   "env": {
     "ALIVE_NAME": {
-      "description": "ادخل اسم حسابك التيلي هنا مو مهم عربي لو انكلش",
+      "description": "هنا ضع اسم التلجرام الخاص بك",
       "value": ""
     },
-    "API_ID": {
-      "description": "ايبي ايدي الكود الصغير",
+    "APP_ID": {
+      "description": "هنا ضع الايبي ايدي الخاص بك يتكون من ارقام", 
       "value": ""
     },
     "API_HASH": {
-      "description": "كود ايبي هاش",
+      "description": "هنا ضع الايبي هاش الخاص بك يتكون من احرف و ارقام",
       "value": ""
     },
-    "SESSION": {
-      "description": "كود التيرمكس - تروح ع حافظـة حسـابك التيلـي وتنسـخ الكـود الكبير",
+    "STRING_SESSION": {
+      "description": " ضع كود تيرمكس",
       "value": ""
     },
-    "ENV": {
-      "description": "خليها كمـا هـي اضغط /skip للتخطـي",
-      "value": "HeaThon"
-    },
-    "BOT_USERNAME": {
-      "description": "معرف البوت مع الـ @ من @BotFather ",
+    "TG_BOT_USERNAME": {
+      "description": " ضع معرف بوتك بدون @",
       "value": ""
     },
-    "BOT_TOKEN": {
-      "description": " توكن البوت - من @BotFather يجب وضع البوت انلاين مود من اعدادات بوت فاذر",
+    "TG_BOT_TOKEN": {
+      "description": "ضع توكن بوتك",
       "value": ""
     },
     "COMMAND_HAND_LER": {
-      "description": "نقطـة الاوامـر خليها كمـا هـي اضغط /skip للتخطـي",
-      "value": ".",
-      "required": false
-    },
-    "OWNER_ID": {
-      "description": "ايدي حسابك - تروح ع @username_to_id_bot ",
-      "value": "",
-      "required": false
-    },
-    "HEROKU_API_KEY": {
-      "description": "كود هيروكو Api تروح للرابـط  https://dashboard.heroku.com/account وتروح ع آخر مربـع وتنسخـه الكـود وترسـله هنـا للبـوت",
-      "value": "",
-      "required": false
-    },
-    "HEROKU_APP_NAME": {
-      "description": "اسم التطبيق ( خلي نفس اسم اول مربع فـوق وبالانكلـش وحروف كلهـا صغيره مو كبيره)",
-      "value": "",
-      "required": false
+      "description": "اتركة كما هوة او ضع الأمر الذي تريده بدلا من النقطة",
+      "value": "."
     },
     "TZ": {
-      "description": "المنطقـه الزمنيـه خليها كمـا هـي اضغط /skip للتخطـي",
+      "description": "ضع القاره / عاصمة بلدك ( اذا كنت لاتعرفه اتركة كما هوة )",
       "value": "Asia/Baghdad",
       "required": false
     },
     "UPSTREAM_REPO": {
-      "description": "رمـز السـورس لا تغيرهـا ابـد اضغط /skip للتخطـي",
+      "description": "لاتغيرة",
       "value": "HeaThon",
       "required": false
     }
@@ -77,7 +53,7 @@
     }
   }],
   "buildpacks": [{
-    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    "url":"https://github.com/HeaThon/heroku-buildpack-ffmpeg-latest"
   },{
     "url":"https://github.com/heroku/heroku-buildpack-google-chrome"
   },{
@@ -89,6 +65,9 @@
   },{
     "url": "https://github.com/chrismytton/heroku-buildpack-jq"
   },{
+    "url": "https://github.com/rahulps1000/heroku-buildpack-nodejs"
+  },{
     "url": "heroku/python"
-  }]
+  }],
+  "stack": "heroku-22"
 }
