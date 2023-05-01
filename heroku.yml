@@ -3,4 +3,4 @@ build:
       worker: Dockerfile
       worker: bash setx.sh
 run:
-   worker: python3 -m userbot.
+   worker: python3 -m userbot
