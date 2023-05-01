@@ -19,4 +19,4 @@ API_HASH = input("Enter API HASH here: ")
 with TelegramClient(StringSession(), API_ID, API_HASH) as client:
     print(client.session.save())
     العميل . send_message ( "me" ، client . session . save ())
-.
+
